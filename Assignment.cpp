@@ -8,13 +8,29 @@ int main()
     int asst1,asst2,mid,final,total;
     string grade;
     cout<<"Enter the students first assignment marks(10%)\n";
-    cin>>asst1;
+while(!(cin>>asst1)){
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    cout<<"Invalid input. Please enter a number: ";
+}
     cout<<"Enter the students second assignment marks(10%)\n";
-    cin>>asst2;
+    while(!(cin>>asst2)){
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    cout<<"Invalid input. Please enter a number: ";
+}
     cout<<"Enter the students mid exam result(30%)\n";
-    cin>>mid;
+    while(!(cin>>mid)){
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    cout<<"Invalid input. Please enter a number: ";
+}
     cout<<"Enter the students final exam result(50%)\n";
-    cin>>final;
+    while(!(cin>>final)){
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    cout<<"Invalid input. Please enter a number: ";
+}
    total=asst1+asst2+mid+final;
     if(total<=100)
     {
